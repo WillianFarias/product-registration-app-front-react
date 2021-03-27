@@ -10,7 +10,12 @@ function App() {
       const [review, setReview] = useState("");
 
       const submitReview = () => {
-        Axios.post('http://localhost:3001/')
+        Axios.post('http://localhost:3001/api/insert', { 
+          movieName: movieName,
+          movieReview: review,
+         }).then(() => {
+           alert("sucessful insert");
+         })
       };
 
       <h1>Product Registration</h1>
