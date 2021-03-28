@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -7,7 +6,10 @@ function App() {
       <h1>Films Register</h1>
 
       <div className="form">
+        <label>Movie Name</label>
         <input type="text" name="movieName"/>
+
+        <label>Review</label>
         <input type="text" name="review"/>
       </div>
     </div>
